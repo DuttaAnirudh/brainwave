@@ -7,6 +7,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -82,12 +83,12 @@ const Hero = () => {
                 {/* MOVING HERO ICONS(Scroll parallax) ON MOUSE SCROLL */}
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul
-                    className=" absolute -left-[5.5rem] bottom-[7.5rem] 
+                    className="hidden absolute -left-[5.5rem] bottom-[7.5rem] 
                   px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 
                   rounded-2xl xl:flex"
                   >
                     {heroIcons.map((icon, i) => (
-                      <li className="p-5 " key={i}>
+                      <li className="p-5" key={i}>
                         <img
                           className="cursor-pointer"
                           src={icon}
@@ -128,6 +129,9 @@ const Hero = () => {
           {/* BACKGROUND CIRCLE MOVING ON MOUSE HOVER */}
           <BackgroundCircles />
         </div>
+
+        {/* COMPANY LOGOS */}
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
       </div>
       <BottomLine />
     </Section>
