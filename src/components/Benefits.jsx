@@ -25,7 +25,7 @@ const Benefits = () => {
             >
               <div
                 className="relative z-2 flex flex-col 
-                min-h-[22rem] p-[2.4rem] pointer-events-none"
+                min-h-[22rem] p-[2.4rem] "
               >
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
@@ -38,7 +38,7 @@ const Benefits = () => {
                   />
                   <p
                     className="ml-auto font-code text-xs font-bold 
-                    text-n-1 uppercase tracking-wider cursor-pointer"
+                    text-n-1 uppercase tracking-wider cursor-pointer transition-colors hover:text-color-1"
                   >
                     Explore more
                   </p>
